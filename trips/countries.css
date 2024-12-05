@@ -1,0 +1,190 @@
+/*MAIN*/
+  
+  .main {
+      background-color: #EFEBE0;
+    }
+    
+  
+  header {
+      background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      text-align: center;
+      padding: 4em 0;
+    }
+    
+  /* Main content styles */
+  .destination__container {
+      padding: 2em;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centers the cards on the page */
+    }
+    
+    .destination {
+      background-color: #fff; /* Change the background color here */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px; /* Space between cards */
+      width: 80%; /* Or fixed width, depending on your design needs */
+      max-width: 500px; /* Maximum width of the cards */
+      color: #333; /* Text color */
+    }
+    
+    .destination h2 {
+      border-left: 4px solid #ff0844; /* Accent color, can be changed */
+      padding-left: 8px;
+      margin-bottom: 16px;
+    }
+    
+    .dates {
+      margin-bottom: 16px;
+    }
+    
+    .events h3 {
+      margin-bottom: 8px;
+    }
+    
+    .events ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .events ul li {
+      background-color: #f4f4f4;
+      margin-bottom: 10px; /* Space between event items */
+      padding: 10px;
+      border-radius: 4px;
+    }
+    
+  
+  
+  footer {
+      text-align: center;
+      padding: 1em 0;
+      background-color: #333;
+      color: white;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+      .destination {
+          margin: 1em;
+      }
+  }
+  
+  
+  /*FOOTER*/
+  
+  .footer__container {
+    background-color: #efebe0;
+    z-index: 1;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #footer__logo {
+    color: black;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  
+  .footer__links {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer__link--wrapper {
+    display: flex;
+  }
+  
+  .footer__link--items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 16px;
+    text-align: left;
+    width: 160px;
+    box-sizing: border-box;
+  }
+  
+  .footer__link--items h2 {
+    margin-bottom: 16px;
+  }
+  
+  .footer__link--items > h2 {
+    color: black;
+  }
+  
+  .footer__link--items a {
+    color: black;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer__link--items a:hover {
+    color: black;
+    transition: 0.3s ease-out;
+  }
+  
+  /* Social Icons */
+  
+  .social__icon--link {
+    color: black;
+    font-size: 24px;
+  }
+  
+  .social__media {
+    max-width: 1080px;
+    width: 100%;
+  }
+  
+  .social-media--wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+  }
+  
+  .social__icons {
+    display: flex;
+    justify-content: center;
+    width: 240px;
+  }
+  
+  .social__logo {
+    color: black;
+    justify-self: flex-start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .website__rights {
+    color: black;
+  }
+  
+  .website__rights a {
+    color: inherit; /* This will make the link the same color as the text in .website__rights */
+    text-decoration: none;
+  }
+  

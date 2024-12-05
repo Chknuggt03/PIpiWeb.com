@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Kumbh Sans", sans-serif;
+  }
+  .navbar {
+    background: #ffa8B6;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    justify-content: center;
+  }
+  
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+  
+  #navbar__logo {
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -noz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -noz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  .navbar__logo-heart {
+    height: 20px;
+    width: auto;
+    vertical-align: middle;
+    filter: brightness(0) saturate(100%) invert(32%) sepia(51%) saturate(7386%) hue-rotate(322deg) brightness(93%) contrast(104%);
+  }
+  
+  .navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .navbar_item {
+    height: 80px;
+  }
+  
+  .navbar__links {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+  }
+  
+  .main__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 50%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    color: white;
+  }
+  
+  .button:hover {
+    background: linear-gradient(to top, #f77062, #fe5196); /* Use a gradient background on hover */
+    transition: all 0.3s ease;
+  }
+  
+  .navbar__links:hover {
+    color: #f77062;
+    transition: all0.3s ease;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .navbar__container {
+      display: flex;
+      justify-content: space-between;
+      height: 80px;
+      z-index: 1;
+      width: 100%;
+      max-width: 1300px;
+      padding: 0;
+    }
+  
+    .navbar__menu {
+      display: grid;
+      grid-template-columns: auto;
+      margin: 0;
+      width: 100%;
+      position: absolute;
+      top: -1000px;
+      opacity: 0;
+      transition: all 0.5s ease;
+      height: 50vh;
+      z-index: -1;
+      background: #F4C2C2;
+    }
+  
+    .navbar__menu.active {
+      background: #F4C2C2;
+      top: 100%;
+      opacity: 1;
+      transition: all 0.5 ease;
+      z-index: 99;
+      height: 50vh;
+      font-size: 1.6rem;
+    }
+  
+  
+  
+    .navbar__toggle .bar {
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      transition: all 0.3s ease-in-out;
+      background: #fff;
+    }
+    .newbar__item {
+      width: 100%;
+    }
+  
+    .newbar__links {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+    }
+  
+    #mobile-menu {
+      position: absolute;
+      top: 20%;
+      right: 5%;
+      transform: translate(5%, 20%);
+    }
+  
+    .navbar__toggle .bar {
+      display: block;
+      cursor: pointer;
+    }
+    #mobile-menu.is-active .bar:nth-child(1) {
+      transform: rotate(45deg) translate(8px, 3px);
+    }
+    #mobile-menu.is-active .bar:nth-child(2) {
+      opacity: 0;
+    }
+    #mobile-menu.is-active .bar:nth-child(3) {
+      transform: rotate(-45deg) translate(8px, -3px);
+    }
+  }
+
+  @media screen and (max-width: 960px) {
+    .navbar {
+      padding: 0; /* Remove padding here to avoid pushing content to the left */
+    }
+  
+    .navbar__container {
+      padding: 0 20px; /* Apply padding here to keep content from touching the screen edges */
+      justify-content: center; /* Center the items within the container */
+    }
+  
+    .navbar__menu {
+      grid-template-columns: 1fr; /* Make sure the menu items stack vertically */
+      place-items: center; /* Center the items within the grid */
+      padding: 20px; /* Add padding within the menu for spacing */
+    }
+  
+    /* Adjust the navbar logo and menu toggle to be positioned correctly */
+    #navbar__logo, .navbar__toggle {
+      position: absolute;
+      left: 20px; /* Position logo from the left */
+      top: 0; /* Align logo to the top */
+    }
+
+    #navbar__logo{
+        padding-top: 20px;
+    }
+  
+    .navbar__toggle {
+      right: 20px; /* Position toggle from the right */
+      left: auto; /* Override the left position for the toggle */
+    }
+  
+    /* Ensure the navbar items are centered and have appropriate spacing */
+    .navbar__item {
+      padding: 10px 0; /* Add vertical padding for each item */
+    }
+  }

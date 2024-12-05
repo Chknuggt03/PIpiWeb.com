@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif; /* Assuming you're using Lato throughout */
+	background-color: #EFEBE0;
+}
+.loader .intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.loader .intro h3 {
+    font-size: 120px;
+    color: black;
+}
+
+#ourStory .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+	background-color: #EFEBE0;
+}
+.blueText{
+	color: turquoise;
+}
+.pinkText{
+	color: pink;
+}
+
+
+#ourStory h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#ourStory p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+#ourStory h2, #ourStory p, .pinkText, .blueText {
+    font-family: 'Dancing Script', cursive;
+}
+
+/* You might want to keep some elements in a more readable, non-calligraphic font for clarity,
+   so adjust the selectors above as needed. */
+
+
+/*FOOTER*/
+
+.footer__container{
+	background-color: #EFEBE0;
+	  z-index: 1;
+	padding: 5rem 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  #footer__logo{
+	color: black;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 2rem;
+  }
+  
+  .footer__links{
+	width: 100%;
+	max-width: 1000px;
+	display: flex;
+	justify-content: center;
+  }
+  
+  .footer__link--wrapper{
+  display: flex;
+  }
+  
+  .footer__link--items{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 16px;
+	text-align: left;
+	width: 160px;
+	box-sizing: border-box;
+  }
+  
+  .footer__link--items h2{
+	margin-bottom: 16px;
+  }
+  
+  .footer__link--items > h2 {
+	color: black;
+  }
+  
+  .footer__link--items a{
+	color: black;
+	text-decoration: none;
+	margin-bottom: 0.5rem;
+	
+  }
+  
+  .footer__link--items a:hover {
+	 color: black;
+	 transition: 0.3s ease-out;
+  }
+  
+  /* Social Icons */
+  .social__icon--link{
+	color: black;
+	font-size: 24px;
+  }
+  
+  .social__media{
+	max-width: 1080px;
+	width: 100%;
+  }
+  
+  .social-media--wrap{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	max-width: 1000px;
+	margin: 40px auto 0 auto;
+  }
+  
+  .social__icons {
+	display: flex;
+	justify-content: center;
+	width: 240px;
+  }
+  
+  .social__logo {
+	color: black;
+	justify-self: flex-start;
+	margin-left: 20px;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 2rem;
+	display: flex;
+	align-items: center;
+	margin-bottom: 16px;
+  }
+  
+  .website__rights {
+	color: black;
+  }
+  
+  .website__rights a {
+	color: inherit; /* This will make the link the same color as the text in .website__rights */
+	text-decoration: none;
+  }
+	  

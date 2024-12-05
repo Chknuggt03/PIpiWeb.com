@@ -1,0 +1,310 @@
+  /*HERO SECTION*/
+  
+  .main {
+    background-color: #EFEBE0;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  
+  .main__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*its like a 50/50 split*/
+    align-items:start;
+    justify-self: center;
+    margin: 0 auto;
+    height: 80%;
+    background-color: #EFEBE0;
+    z-index: 1;
+    width: 75%;
+    max-width: 1300px;
+    padding: 0 0px
+  
+  }
+  
+  .services {
+    margin-top: 80px;
+    background: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .services__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .maintext h1{
+    font-size: 2rem;
+    background-color:#ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+  
+  .services__card {
+    margin: 1rem;
+    height: 200px; /* adjusted height to create a small rectangle */
+    width: 340px; /* adjusted width for rectangular shape */
+    border-radius: 4px;
+    background-color: #000000;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    transition: transform 0.2s ease-in;
+    overflow: hidden;
+    border: 1px solid black; /* Add a black border here */
+  }
+  
+  .services__card img {
+    width: 100%;
+    height: auto;
+    /* Adjust if you want the image to maintain its aspect ratio */
+    object-fit: cover;
+    /* This can be 'contain' or 'cover' depending on desired behavior */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  
+  .services__card:hover {
+    transform: scale(1.075);
+  }
+  
+  /* ... Your existing CSS ... */
+  
+  /* Responsive styles for phones */
+  @media screen and (max-width: 768px) {
+    .navbar__container,
+    .social-media-wrap,
+    .footer__links,
+    .main__container,
+    .services__container {
+      flex-direction: column;
+      padding: 0 20px;
+    }
+  
+    .navbar__menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .navbar__toggle {
+      display: block;
+    }
+  
+    .navbar__menu.active {
+      display: flex;
+    }
+  
+    .main__container,
+    .services__container2 {
+      grid-template-columns: 1fr; /* Stack the columns on top of each other */
+    }
+  
+    .services__card {
+      width: 100%; /* Make the card take full width */
+      margin: 1rem 0; /* Add vertical margin */
+    }
+  
+    .maintext h1 {
+      font-size: 1.5rem; /* Adjust font-size for smaller screens */
+    }
+  
+    .footer__link--items {
+      align-items: center; /* Center the footer items */
+    }
+  
+    .social__media-wrap {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  /* Responsive styles for even smaller phones */
+  @media screen and (max-width: 480px) {
+    .maintext h1 {
+      font-size: 1.25rem; /* Even smaller font-size for very small screens */
+    }
+  }
+
+
+.row {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 1; /* Adjust this value to change the number of columns */
+    padding: 4px; /* Adjust or remove padding as needed */
+  }
+  .column img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 8px;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+.scale-on-click {
+    transform: scale(2);
+    transition: transform 0.3s ease;
+}
+
+
+.body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+/* Create two equal columns that sits next to each other */
+
+.column img {
+    width: 100%; /* Adjust if you want to control the size of images */
+    height: auto;
+    display: block; /* This ensures there is no extra space below images */
+    margin-bottom: 8px; /* Adjust or remove as needed */
+  }
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+.footer__container{
+    background-color: #EFEBE0;
+      z-index: 1;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #footer__logo{
+    color: black;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  
+  .footer__links{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer__link--wrapper{
+  display: flex;
+  }
+  
+  .footer__link--items{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 16px;
+    text-align: left;
+    width: 160px;
+    box-sizing: border-box;
+  }
+  
+  .footer__link--items h2{
+    margin-bottom: 16px;
+  }
+  
+  .footer__link--items > h2 {
+    color: black;
+  }
+  
+  .footer__link--items a{
+    color: black;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    
+  }
+  
+  .footer__link--items a:hover {
+     color: black;
+     transition: 0.3s ease-out;
+  }
+  
+  /* Social Icons */
+  
+  .social__icon--link{
+    color: black;
+    font-size: 24px;
+  }
+  
+  .social__media{
+    max-width: 1080px;
+    width: 100%;
+  }
+  
+  .social-media--wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+  }
+  
+  .social__icons {
+    display: flex;
+    justify-content: center;
+    width: 240px;
+  }
+  
+  .social__logo {
+    color: black;
+    justify-self: flex-start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .website__rights {
+    color: black;
+  }
+  
+  .website__rights a {
+    color: inherit; /* This will make the link the same color as the text in .website__rights */
+    text-decoration: none;
+  }

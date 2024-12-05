@@ -1,0 +1,170 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: start; /* Aligns items to the top */
+  padding: 20px;
+  background-color: #EFEBE0;
+}
+  
+
+.albums {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust size as needed */
+  gap: 20px; /* Space between items */
+  padding: 20px;
+}
+
+.album-item {
+    background-color: white;
+    padding: 10px;
+    padding-bottom: 100px; /* Larger padding at the bottom for the caption */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.album-item:hover {
+    transform: scale(1.05);
+}
+
+.album-item img {
+    width: 90%; /* Slightly smaller than the container to fit like a Polaroid */
+    height: auto;
+    margin-top: 10px; /* Space at the top */
+}
+
+.album-item p {
+    font-family: 'Dancing Script', cursive; /* Example of a handwriting-like font */
+    font-size: 1.2rem;
+    margin-top: 10px; /* Space between image and text */
+    color: #333;
+    text-decoration: none; /* Removes underline from links */
+    color: black; /* Sets the text color to black */
+}
+
+
+.albums__container {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.album-item a, 
+.album-item a:visited, 
+.album-item a:hover, 
+.album-item a:active, 
+.album-item a:focus {
+    text-decoration: none; /* Removes underline from links */
+    color: black; /* or any other color you prefer */
+    outline: none; /* Removes the blue outline on focus */
+}
+
+.footer__container{
+  background-color: #EFEBE0;
+    z-index: 1;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer__logo{
+  color: black;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.footer__links{
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__link--wrapper{
+display: flex;
+}
+
+.footer__link--items{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 16px;
+  text-align: left;
+  width: 160px;
+  box-sizing: border-box;
+}
+
+.footer__link--items h2{
+  margin-bottom: 16px;
+}
+
+.footer__link--items > h2 {
+  color: black;
+}
+
+.footer__link--items a{
+  color: black;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  
+}
+
+.footer__link--items a:hover {
+   color: black;
+   transition: 0.3s ease-out;
+}
+
+/* Social Icons */
+
+.social__icon--link{
+  color: black;
+  font-size: 24px;
+}
+
+.social__media{
+  max-width: 1080px;
+  width: 100%;
+}
+
+.social-media--wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto 0 auto;
+}
+
+.social__icons {
+  display: flex;
+  justify-content: center;
+  width: 240px;
+}
+
+.social__logo {
+  color: black;
+  justify-self: flex-start;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.website__rights {
+  color: black;
+}
+
+.website__rights a {
+  color: inherit; /* This will make the link the same color as the text in .website__rights */
+  text-decoration: none;
+}
